@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <link rel="apple-touch-icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
 <link rel="icon" href="icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="英単語アプリ">
@@ -99,7 +99,7 @@
 </div>
 
 <script>
-// --- 単語データ ---
+// --- 単語データ --- (※一部省略)
 const rawData = [
      // --- 中1 ---
     {w:"I", m:"私は", g:1}, {w:"my", m:"私の", g:1}, {w:"me", m:"私を", g:1}, {w:"mine", m:"私のもの", g:1}, {w:"you", m:"あなたは", g:1}, {w:"your", m:"あなたの", g:1}, {w:"yours", m:"あなたのもの", g:1}, {w:"he", m:"彼は", g:1}, {w:"his", m:"彼の", g:1}, {w:"him", m:"彼を", g:1}, {w:"she", m:"彼女は", g:1}, {w:"her", m:"彼女の", g:1}, {w:"it", m:"それは", g:1}, {w:"its", m:"その", g:1}, {w:"we", m:"私たちは", g:1}, {w:"our", m:"私たちの", g:1}, {w:"us", m:"私たちを", g:1}, {w:"ours", m:"私たちのもの", g:1}, {w:"they", m:"彼らは", g:1}, {w:"their", m:"彼らの", g:1}, {w:"them", m:"彼らを", g:1}, {w:"theirs", m:"彼らのもの", g:1}, {w:"this", m:"これ", g:1}, {w:"that", m:"あれ", g:1}, {w:"these", m:"これら", g:1}, {w:"those", m:"あれら", g:1}, {w:"who", m:"だれ", g:1}, {w:"whose", m:"だれの", g:1}, {w:"what", m:"何", g:1}, {w:"which", m:"どちら", g:1}, {w:"where", m:"どこ", g:1}, {w:"when", m:"いつ", g:1}, {w:"why", m:"なぜ", g:1}, {w:"how", m:"どのように", g:1}, {w:"always", m:"いつも", g:1}, {w:"usually", m:"ふつう", g:1}, {w:"often", m:"しばしば", g:1}, {w:"sometimes", m:"ときどき", g:1}, {w:"never", m:"決して〜ない", g:1}, {w:"around", m:"〜のまわりに", g:1}, {w:"school", m:"学校", g:1}, {w:"student", m:"生徒", g:1}, {w:"teacher", m:"先生", g:1}, {w:"class", m:"クラス", g:1}, {w:"friend", m:"友達", g:1}, {w:"book", m:"本", g:1}, {w:"pen", m:"ペン", g:1}, {w:"pencil", m:"鉛筆", g:1}, {w:"notebook", m:"ノート", g:1}, {w:"desk", m:"机", g:1}, {w:"chair", m:"椅子", g:1}, {w:"bag", m:"かばん", g:1}, {w:"ruler", m:"定規", g:1}, {w:"eraser", m:"消しゴム", g:1}, {w:"library", m:"図書館", g:1}, {w:"classroom", m:"教室", g:1}, {w:"homework", m:"宿題", g:1}, {w:"test", m:"テスト", g:1}, {w:"lesson", m:"授業", g:1}, {w:"subject", m:"教科", g:1}, {w:"math", m:"数学", g:1}, {w:"science", m:"理科", g:1}, {w:"english", m:"英語", g:1}, {w:"music", m:"音楽", g:1}, {w:"art", m:"美術", g:1}, {w:"sport", m:"スポーツ", g:1}, {w:"soccer", m:"サッカー", g:1}, {w:"baseball", m:"野球", g:1}, {w:"tennis", m:"テニス", g:1}, {w:"basketball", m:"バスケットボール", g:1}, {w:"swimming", m:"水泳", g:1}, {w:"piano", m:"ピアノ", g:1}, {w:"guitar", m:"ギター", g:1}, {w:"song", m:"歌", g:1}, {w:"dance", m:"ダンス", g:1}, {w:"family", m:"家族", g:1}, {w:"father", m:"父", g:1}, {w:"mother", m:"母", g:1}, {w:"brother", m:"兄・弟", g:1}, {w:"sister", m:"姉・妹", g:1}, {w:"grandfather", m:"祖父", g:1}, {w:"grandmother", m:"祖母", g:1}, {w:"parent", m:"親", g:1}, {w:"house", m:"家", g:1}, {w:"room", m:"部屋", g:1}, {w:"kitchen", m:"台所", g:1}, {w:"bath", m:"風呂", g:1}, {w:"garden", m:"庭", g:1}, {w:"window", m:"窓", g:1}, {w:"door", m:"ドア", g:1}, {w:"bed", m:"ベッド", g:1}, {w:"table", m:"テーブル", g:1}, {w:"cup", m:"カップ", g:1}, {w:"dish", m:"皿", g:1}, {w:"fork", m:"フォーク", g:1}, {w:"spoon", m:"スプーン", g:1}, {w:"food", m:"食べ物", g:1}, {w:"drink", m:"飲み物", g:1}, {w:"water", m:"水", g:1}, {w:"tea", m:"茶", g:1}, {w:"coffee", m:"コーヒー", g:1}, {w:"milk", m:"牛乳", g:1}, {w:"juice", m:"ジュース", g:1}, {w:"bread", m:"パン", g:1}, {w:"rice", m:"米", g:1}, {w:"egg", m:"卵", g:1}, {w:"meat", m:"肉", g:1}, {w:"fish", m:"魚", g:1}, {w:"apple", m:"りんご", g:1}, {w:"orange", m:"オレンジ", g:1}, {w:"banana", m:"バナナ", g:1}, {w:"cat", m:"猫", g:1}, {w:"dog", m:"犬", g:1}, {w:"bird", m:"鳥", g:1}, {w:"rabbit", m:"うさぎ", g:1}, {w:"animal", m:"動物", g:1}, {w:"park", m:"公園", g:1}, {w:"store", m:"店", g:1}, {w:"hospital", m:"病院", g:1}, {w:"station", m:"駅", g:1}, {w:"town", m:"町", g:1}, {w:"city", m:"市", g:1}, {w:"country", m:"国", g:1}, {w:"japan", m:"日本", g:1}, {w:"america", m:"アメリカ", g:1}, {w:"mountain", m:"山", g:1}, {w:"river", m:"川", g:1}, {w:"sea", m:"海", g:1}, {w:"sky", m:"空", g:1}, {w:"sun", m:"太陽", g:1}, {w:"moon", m:"月", g:1}, {w:"star", m:"星", g:1}, {w:"flower", m:"花", g:1}, {w:"tree", m:"木", g:1}, {w:"rain", m:"雨", g:1}, {w:"snow", m:"雪", g:1}, {w:"day", m:"日", g:1}, {w:"week", m:"週", g:1}, {w:"month", m:"月", g:1}, {w:"year", m:"年", g:1}, {w:"today", m:"今日", g:1}, {w:"tomorrow", m:"明日", g:1}, {w:"yesterday", m:"昨日", g:1}, {w:"morning", m:"朝", g:1}, {w:"afternoon", m:"午後", g:1}, {w:"evening", m:"夕方", g:1}, {w:"night", m:"夜", g:1}, {w:"time", m:"時間", g:1}, {w:"o'clock", m:"時", g:1}, {w:"monday", m:"月曜日", g:1}, {w:"tuesday", m:"火曜日", g:1}, {w:"wednesday", m:"水曜日", g:1}, {w:"thursday", m:"木曜日", g:1}, {w:"friday", m:"金曜日", g:1}, {w:"saturday", m:"土曜日", g:1}, {w:"sunday", m:"日曜日", g:1}, {w:"january", m:"1月", g:1}, {w:"february", m:"2月", g:1}, {w:"march", m:"3月", g:1}, {w:"april", m:"4月", g:1}, {w:"may", m:"5月", g:1}, {w:"june", m:"6月", g:1}, {w:"july", m:"7月", g:1}, {w:"august", m:"8月", g:1}, {w:"september", m:"9月", g:1}, {w:"october", m:"10月", g:1}, {w:"november", m:"11月", g:1}, {w:"december", m:"12月", g:1}, {w:"spring", m:"春", g:1}, {w:"summer", m:"夏", g:1}, {w:"fall", m:"秋", g:1}, {w:"winter", m:"冬", g:1}, {w:"color", m:"色", g:1}, {w:"red", m:"赤", g:1}, {w:"blue", m:"青", g:1}, {w:"yellow", m:"黄色", g:1}, {w:"green", m:"緑", g:1}, {w:"white", m:"白", g:1}, {w:"black", m:"黒", g:1}, {w:"big", m:"大きい", g:1}, {w:"small", m:"小さい", g:1}, {w:"long", m:"長い", g:1}, {w:"short", m:"短い", g:1}, {w:"tall", m:"背が高い", g:1}, {w:"old", m:"古い・年とった", g:1}, {w:"new", m:"新しい", g:1}, {w:"young", m:"若い", g:1}, {w:"good", m:"良い", g:1}, {w:"bad", m:"悪い", g:1}, {w:"happy", m:"幸せな", g:1}, {w:"sad", m:"悲しい", g:1}, {w:"hungry", m:"空腹の", g:1}, {w:"tired", m:"疲れた", g:1}, {w:"hot", m:"暑い", g:1}, {w:"cold", m:"寒い", g:1}, {w:"busy", m:"忙しい", g:1}, {w:"cute", m:"かわいい", g:1}, {w:"cool", m:"かっこいい", g:1}, {w:"fine", m:"元気な", g:1}, {w:"fast", m:"速い", g:1}, {w:"slow", m:"遅い", g:1}, {w:"high", m:"高い", g:1}, {w:"low", m:"低い", g:1}, {w:"rich", m:"豊かな", g:1}, {w:"easy", m:"簡単な", g:1}, {w:"hard", m:"一生懸命・難しい", g:1}, {w:"early", m:"早い", g:1}, {w:"late", m:"遅い", g:1}, {w:"well", m:"上手に", g:1}, {w:"very", m:"とても", g:1}, {w:"many", m:"たくさんの", g:1}, {w:"much", m:"多くの", g:1}, {w:"some", m:"いくつかの", g:1}, {w:"any", m:"いくつかの（否定・疑問）", g:1}, {w:"a", m:"1つの", g:1}, {w:"an", m:"1つの", g:1}, {w:"the", m:"その", g:1}, {w:"and", m:"そして", g:1}, {w:"but", m:"しかし", g:1}, {w:"or", m:"または", g:1}, {w:"so", m:"だから", g:1}, {w:"go", m:"行く", g:1}, {w:"come", m:"来る", g:1}, {w:"eat", m:"食べる", g:1}, {w:"drink", m:"飲む", g:1}, {w:"like", m:"好む", g:1}, {w:"love", m:"愛する", g:1}, {w:"have", m:"持っている", g:1}, {w:"do", m:"する", g:1}, {w:"play", m:"遊ぶ・演奏する", g:1}, {w:"study", m:"勉強する", g:1}, {w:"read", m:"読む", g:1}, {w:"write", m:"書く", g:1}, {w:"speak", m:"話す", g:1}, {w:"talk", m:"話す", g:1}, {w:"say", m:"言う", g:1}, {w:"know", m:"知っている", g:1}, {w:"see", m:"見える・会う", g:1}, {w:"look", m:"見る", g:1}, {w:"watch", m:"見る", g:1}, {w:"listen", m:"聴く", g:1}, {w:"hear", m:"聞こえる", g:1}, {w:"run", m:"走る", g:1}, {w:"walk", m:"歩く", g:1}, {w:"jump", m:"跳ぶ", g:1}, {w:"swim", m:"泳ぐ", g:1}, {w:"sing", m:"歌う", g:1}, {w:"cook", m:"料理する", g:1}, {w:"make", m:"作る", g:1}, {w:"take", m:"取る", g:1}, {w:"get", m:"手に入れる", g:1}, {w:"give", m:"与える", g:1}, {w:"buy", m:"買う", g:1}, {w:"use", m:"使う", g:1}, {w:"help", m:"手伝う", g:1}, {w:"wash", m:"洗う", g:1}, {w:"clean", m:"掃除する", g:1}, {w:"open", m:"開ける", g:1}, {w:"close", m:"閉める", g:1}, {w:"stand", m:"立つ", g:1}, {w:"sit", m:"座る", g:1}, {w:"stop", m:"止まる", g:1}, {w:"start", m:"始める", g:1}, {w:"wait", m:"待つ", g:1}, {w:"meet", m:"会う", g:1}, {w:"visit", m:"訪れる", g:1}, {w:"live", m:"住む", g:1}, {w:"work", m:"働く", g:1}, {w:"want", m:"欲しい", g:1}, {w:"show", m:"見せる", g:1}, {w:"send", m:"送る", g:1}, {w:"bring", m:"持ってくる", g:1}, {w:"put", m:"置く", g:1}, {w:"call", m:"呼ぶ", g:1}, {w:"ask", m:"尋ねる", g:1}, {w:"answer", m:"答える", g:1}, {w:"teach", m:"教える", g:1}, {w:"learn", m:"学ぶ", g:1}, {w:"understand", m:"理解する", g:1}, {w:"remember", m:"覚えている", g:1}, {w:"forget", m:"忘れる", g:1}, {w:"think", m:"考える", g:1}, {w:"believe", m:"信じる", g:1}, {w:"hope", m:"望む", g:1}, {w:"smile", m:"微笑む", g:1}, {w:"cry", m:"泣く", g:1}, {w:"laugh", m:"笑う", g:1}, {w:"enjoy", m:"楽しむ", g:1}, {w:"finish", m:"終える", g:1}, {w:"stay", m:"滞在する", g:1}, {w:"become", m:"〜になる", g:1}, {w:"keep", m:"保つ", g:1}, {w:"leave", m:"去る", g:1}, {w:"arrive", m:"到着する", g:1}, {w:"try", m:"試みる", g:1}, {w:"use", m:"使う", g:1}, {w:"need", m:"必要とする", g:1}, {w:"feel", m:"感じる", g:1}, {w:"can", m:"できる", g:1}, {w:"must", m:"しなければならない", g:1}, {w:"may", m:"してもよい", g:1}, {w:"should", m:"すべきだ", g:1}, {w:"will", m:"だろう", g:1}, {w:"be", m:"〜である", g:1}, {w:"am", m:"〜である", g:1}, {w:"is", m:"〜である", g:1}, {w:"are", m:"〜である", g:1}, {w:"was", m:"〜だった", g:1}, {w:"were", m:"〜だった", g:1}, {w:"at", m:"〜で", g:1}, {w:"in", m:"〜の中に", g:1}, {w:"on", m:"〜の上に", g:1}, {w:"under", m:"〜の下に", g:1}, {w:"by", m:"〜のそばに", g:1}, {w:"with", m:"〜と一緒に", g:1}, {w:"for", m:"〜のために", g:1}, {w:"to", m:"〜へ", g:1}, {w:"from", m:"〜から", g:1}, {w:"of", m:"〜の", g:1}, {w:"about", m:"〜について", g:1}, {w:"after", m:"〜の後で", g:1}, {w:"before", m:"〜の前に", g:1}, {w:"one", m:"1", g:1}, {w:"two", m:"2", g:1}, {w:"three", m:"3", g:1}, {w:"four", m:"4", g:1}, {w:"five", m:"5", g:1}, {w:"six", m:"6", g:1}, {w:"seven", m:"7", g:1}, {w:"eight", m:"8", g:1}, {w:"nine", m:"9", g:1}, {w:"ten", m:"10", g:1}, {w:"eleven", m:"11", g:1}, {w:"twelve", m:"12", g:1}, {w:"thirteen", m:"13", g:1}, {w:"fourteen", m:"14", g:1}, {w:"fifteen", m:"15", g:1}, {w:"sixteen", m:"16", g:1}, {w:"seventeen", m:"17", g:1}, {w:"eighteen", m:"18", g:1}, {w:"nineteen", m:"19", g:1}, {w:"twenty", m:"20", g:1}, {w:"thirty", m:"30", g:1}, {w:"forty", m:"40", g:1}, {w:"fifty", m:"50", g:1}, {w:"sixty", m:"60", g:1}, {w:"seventy", m:"70", g:1}, {w:"eighty", m:"80", g:1}, {w:"ninety", m:"90", g:1}, {w:"hundred", m:"100", g:1}, {w:"thousand", m:"1000", g:1}, {w:"first", m:"第1の", g:1}, {w:"second", m:"第2の", g:1}, {w:"third", m:"第3の", g:1}, {w:"fourth", m:"第4の", g:1}, {w:"fifth", m:"第5の", g:1}, {w:"name", m:"名前", g:1}, {w:"number", m:"番号", g:1}, {w:"people", m:"人々", g:1}, {w:"man", m:"男の人", g:1}, {w:"woman", m:"女の人", g:1}, {w:"boy", m:"男の子", g:1}, {w:"girl", m:"女の子", g:1}, {w:"baby", m:"赤ちゃん", g:1}, {w:"child", m:"子供", g:1}, {w:"king", m:"王", g:1}, {w:"queen", m:"女王", g:1}, {w:"face", m:"顔", g:1}, {w:"eye", m:"目", g:1}, {w:"ear", m:"耳", g:1}, {w:"mouth", m:"口", g:1}, {w:"nose", m:"鼻", g:1}, {w:"hand", m:"手", g:1}, {w:"arm", m:"腕", g:1}, {w:"leg", m:"脚", g:1}, {w:"foot", m:"足", g:1}, {w:"body", m:"体", g:1}, {w:"hair", m:"髪", g:1}, {w:"clothes", m:"服", g:1}, {w:"shirt", m:"シャツ", g:1}, {w:"shoes", m:"靴", g:1}, {w:"cap", m:"帽子", g:1}, {w:"box", m:"箱", g:1}, {w:"key", m:"鍵", g:1}, {w:"watch", m:"時計", g:1}, {w:"money", m:"お金", g:1}, {w:"card", m:"カード", g:1}, {w:"picture", m:"写真・絵", g:1}, {w:"ticket", m:"チケット", g:1}, {w:"news", m:"ニュース", g:1}, {w:"problem", m:"問題", g:1}, {w:"question", m:"質問", g:1}, {w:"answer", m:"答え", g:1}, {w:"idea", m:"考え", g:1}, {w:"life", m:"命・生活", g:1}, {w:"world", m:"世界", g:1}, {w:"earth", m:"地球", g:1}, {w:"island", m:"島", g:1}, {w:"bus", m:"バス", g:1}, {w:"train", m:"電車", g:1}, {w:"car", m:"車", g:1}, {w:"bike", m:"自転車", g:1}, {w:"plane", m:"飛行機", g:1}, {w:"ship", m:"船", g:1}, {w:"hello", m:"こんにちは", g:1}, {w:"hi", m:"やあ", g:1}, {w:"goodbye", m:"さようなら", g:1}, {w:"yes", m:"はい", g:1}, {w:"no", m:"いいえ", g:1}, {w:"please", m:"お願いします", g:1}, {w:"thanks", m:"ありがとう", g:1}, {w:"sorry", m:"ごめんなさい", g:1}, {w:"welcome", m:"ようこそ", g:1}, {w:"camera", m:"カメラ", g:1}, {w:"computer", m:"コンピューター", g:1}, {w:"phone", m:"電話", g:1}, {w:"tv", m:"テレビ", g:1}, {w:"radio", m:"ラジオ", g:1}, {w:"ball", m:"ボール", g:1}, {w:"doll", m:"人形", g:1}, {w:"game", m:"ゲーム", g:1}, {w:"toy", m:"おもちゃ", g:1}, {w:"zoo", m:"動物園", g:1}, {w:"museum", m:"博物館", g:1}, {w:"restaurant", m:"レストラン", g:1}, {w:"shop", m:"店", g:1}, {w:"street", m:"通り", g:1}, {w:"sea", m:"海", g:1}, {w:"beach", m:"浜辺", g:1}, {w:"cake", m:"ケーキ", g:1}, {w:"milk", m:"ミルク", g:1}, {w:"tea", m:"お茶", g:1}, {w:"box", m:"箱", g:1}, {w:"glass", m:"グラス", g:1}, {w:"cup", m:"カップ", g:1}, {w:"paper", m:"紙", g:1}, {w:"letter", m:"手紙", g:1}, {w:"page", m:"ページ", g:1}, {w:"word", m:"単語", g:1}, {w:"story", m:"物語", g:1}, {w:"music", m:"音楽", g:1}, {w:"song", m:"歌", g:1}, {w:"voice", m:"声", g:1}, {w:"sound", m:"音", g:1}, {w:"light", m:"光", g:1}, {w:"dark", m:"暗い", g:1}, {w:"fire", m:"火", g:1}, {w:"wind", m:"風", g:1}, {w:"cloud", m:"雲", g:1}, {w:"morning", m:"朝", g:1}, {w:"noon", m:"正午", g:1}, {w:"night", m:"夜", g:1}, {w:"past", m:"過去", g:1}, {w:"future", m:"未来", g:1}, {w:"all", m:"すべての", g:1}, {w:"each", m:"それぞれの", g:1}, {w:"every", m:"毎〜", g:1}, {w:"both", m:"両方の", g:1}, {w:"another", m:"別の", g:1}, {w:"other", m:"他の", g:1}, {w:"same", m:"同じ", g:1}, {w:"different", m:"違った", g:1}, {w:"beautiful", m:"美しい", g:1}, {w:"wonderful", m:"すばらしい", g:1}, {w:"famous", m:"有名な", g:1}, {w:"favorite", m:"お気に入りの", g:1}, {w:"popular", m:"人気のある", g:1}, {w:"special", m:"特別な", g:1}, {w:"useful", m:"役立つ", g:1}, {w:"natural", m:"自然な", g:1}, {w:"free", m:"自由な・暇な", g:1}, {w:"kind", m:"親切な", g:1}, {w:"strong", m:"強い", g:1}, {w:"weak", m:"弱い", g:1}, {w:"heavy", m:"重い", g:1}, {w:"light", m:"軽い", g:1}, {w:"wide", m:"広い", g:1}, {w:"near", m:"近い", g:1}, {w:"far", m:"遠い", g:1}, {w:"ready", m:"準備ができて", g:1}, {w:"sure", m:"確信して", g:1}, {w:"afraid", m:"恐れて", g:1}, {w:"angry", m:"怒って", g:1}, {w:"surprised", m:"驚いて", g:1}, {w:"excited", m:"わくわくして", g:1}, {w:"proud", m:"誇りに思って", g:1}, {w:"brave", m:"勇敢な", g:1}, {w:"lucky", m:"運の良い", g:1}, {w:"careful", m:"注意深い", g:1}, {w:"quiet", m:"静かな", g:1}, {w:"noisy", m:"うるさい", g:1}, {w:"clean", m:"きれいな", g:1}, {w:"dirty", m:"汚い", g:1}, {w:"dry", m:"乾いた", g:1}, {w:"wet", m:"濡れた", g:1}, {w:"full", m:"いっぱいの", g:1}, {w:"empty", m:"空の", g:1}, {w:"fast", m:"速い", g:1}, {w:"quick", m:"素早い", g:1}, {w:"slow", m:"遅い", g:1}, {w:"deep", m:"深い", g:1}, {w:"shallow", m:"浅い", g:1}, {w:"thick", m:"厚い", g:1}, {w:"thin", m:"薄い", g:1}, {w:"sweet", m:"甘い", g:1}, {w:"salt", m:"塩", g:1}, {w:"bitter", m:"苦い", g:1}, {w:"sour", m:"酸っぱい", g:1}, {w:"delicious", m:"おいしい", g:1}, {w:"wonderful", m:"すてきな", g:1}, {w:"great", m:"偉大な", g:1}, {w:"large", m:"巨大な", g:1}, {w:"tiny", m:"ちっちゃな", g:1}, {w:"outside", m:"外で", g:1}, {w:"inside", m:"中で", g:1}, {w:"here", m:"ここに", g:1}, {w:"there", m:"そこに", g:1}, {w:"up", m:"上へ", g:1}, {w:"down", m:"下へ", g:1}, {w:"now", m:"今", g:1}, {w:"then", m:"その時", g:1}, {w:"soon", m:"すぐ", g:1}, {w:"again", m:"また", g:1}, {w:"too", m:"〜もまた", g:1}, {w:"also", m:"〜もまた", g:1}, {w:"really", m:"本当に", g:1}, {w:"maybe", m:"たぶん", g:1}, {w:"together", m:"一緒に", g:1}, {w:"alone", m:"一人で", g:1}, {w:"almost", m:"ほとんど", g:1}, {w:"only", m:"〜だけ", g:1}, {w:"even", m:"〜でさえ", g:1}, {w:"still", m:"まだ", g:1}, {w:"yet", m:"まだ（否定）", g:1}, {w:"once", m:"一度", g:1}, {w:"twice", m:"二度", g:1}, {w:"back", m:"後ろへ", g:1}, {w:"home", m:"家へ", g:1}, {w:"far", m:"遠くに", g:1}, {w:"near", m:"近くに", g:1}, {w:"north", m:"北", g:1}, {w:"south", m:"南", g:1}, {w:"east", m:"東", g:1}, {w:"west", m:"西", g:1}, {w:"between", m:"〜の間に", g:1}, {w:"during", m:"〜の間中", g:1}, {w:"without", m:"〜なしで", g:1}, {w:"against", m:"〜に反対して", g:1}, {w:"until", m:"〜まで", g:1}, {w:"since", m:"〜以来", g:1}, {w:"because", m:"〜なので", g:1}, {w:"if", m:"もし〜なら", g:1}, {w:"though", m:"〜だけれども", g:1}, {w:"while", m:"〜する間に", g:1}, {w:"lunch", m:"昼食", g:1}, {w:"dinner", m:"夕食", g:1}, {w:"breakfast", m:"朝食", g:1}, {w:"snack", m:"おやつ", g:1}, {w:"curry", m:"カレー", g:1}, {w:"pizza", m:"ピザ", g:1}, {w:"sandwich", m:"サンドイッチ", g:1}, {w:"salad", m:"サラダ", g:1}, {w:"soup", m:"スープ", g:1}, {w:"fruit", m:"果物", g:1}, {w:"vegetable", m:"野菜", g:1}, {w:"potato", m:"ジャガイモ", g:1}, {w:"tomato", m:"トマト", g:1}, {w:"onion", m:"タマネギ", g:1}, {w:"carrot", m:"ニンジン", g:1}, {w:"beef", m:"牛肉", g:1}, {w:"pork", m:"豚肉", g:1}, {w:"chicken", m:"鶏肉", g:1}, {w:"cake", m:"ケーキ", g:1}, {w:"ice cream", m:"アイスクリーム", g:1}, {w:"cookie", m:"クッキー", g:1}, {w:"chocolate", m:"チョコレート", g:1}, {w:"candy", m:"キャンディー", g:1}, {w:"kitchen", m:"台所", g:1}, {w:"fridge", m:"冷蔵庫", g:1}, {w:"oven", m:"オーブン", g:1}, {w:"knife", m:"ナイフ", g:1}, {w:"plate", m:"皿", g:1}, {w:"bowl", m:"ボウル", g:1}, {w:"bottle", m:"瓶", g:1}, {w:"can", m:"缶", g:1}, {w:"glass", m:"グラス", g:1}, {w:"pot", m:"鍋", g:1}, {w:"bathroom", m:"トイレ・浴室", g:1}, {w:"bedroom", m:"寝室", g:1}, {w:"living room", m:"居間", g:1}, {w:"roof", m:"屋根", g:1}, {w:"wall", m:"壁", g:1}, {w:"floor", m:"床", g:1}, {w:"ceiling", m:"天井", g:1}, {w:"corner", m:"角", g:1}, {w:"hall", m:"ホール", g:1}, {w:"stairs", m:"階段", g:1}, {w:"doorbell", m:"ドアベル", g:1}, {w:"mirror", m:"鏡", g:1}, {w:"towel", m:"タオル", g:1}, {w:"soap", m:"石鹸", g:1}, {w:"toothbrush", m:"歯ブラシ", g:1}, {w:"blanket", m:"毛布", g:1}, {w:"pillow", m:"枕", g:1}, {w:"calendar", m:"カレンダー", g:1}, {w:"clock", m:"時計", g:1}, {w:"lamp", m:"ランプ", g:1}, {w:"shelf", m:"棚", g:1},
@@ -111,35 +111,16 @@ const rawData = [
 {w:"ability", m:"能力", g:3}, {w:"accept", m:"受け入れる", g:3}, {w:"achieve", m:"達成する", g:3}, {w:"action", m:"行動", g:3}, {w:"active", m:"活動的な", g:3}, {w:"advantage", m:"利点", g:3}, {w:"advice", m:"助言", g:3}, {w:"advise", m:"助言する", g:3}, {w:"affect", m:"影響を与える", g:3}, {w:"agree", m:"同意する", g:3}, {w:"agreement", m:"合意", g:3}, {w:"allow", m:"許す", g:3}, {w:"amazing", m:"驚くべき", g:3}, {w:"amount", m:"量", g:3}, {w:"ancient", m:"古代の", g:3}, {w:"announcement", m:"発表", g:3}, {w:"appear", m:"現れる", g:3}, {w:"application", m:"申し込み", g:3}, {w:"apply", m:"申し込む", g:3}, {w:"appreciate", m:"感謝する", g:3}, {w:"approach", m:"近づく", g:3}, {w:"appropriate", m:"適切な", g:3}, {w:"area", m:"地域", g:3}, {w:"argument", m:"議論", g:3}, {w:"arrange", m:"手配する", g:3}, {w:"article", m:"記事", g:3}, {w:"artificial", m:"人工的な", g:3}, {w:"aspect", m:"側面", g:3}, {w:"assistant", m:"助手", g:3}, {w:"atmosphere", m:"大気・雰囲気", g:3}, {w:"attach", m:"取り付ける", g:3}, {w:"attack", m:"攻撃する", g:3}, {w:"attempt", m:"試みる", g:3}, {w:"attend", m:"出席する", g:3}, {w:"attention", m:"注意", g:3}, {w:"attitude", m:"態度", g:3}, {w:"attract", m:"惹きつける", g:3}, {w:"audience", m:"聴衆", g:3}, {w:"author", m:"著者", g:3}, {w:"available", m:"利用可能な", g:3}, {w:"avoid", m:"避ける", g:3}, {w:"award", m:"賞", g:3}, {w:"background", m:"背景", g:3}, {w:"base", m:"基礎", g:3}, {w:"basic", m:"基本的な", g:3}, {w:"battle", m:"戦い", g:3}, {w:"behavior", m:"行動", g:3}, {w:"believe", m:"信じる", g:3}, {w:"belong", m:"属する", g:3}, {w:"benefit", m:"利益", g:3}, {w:"besides", m:"〜に加えて", g:3}, {w:"beyond", m:"〜を越えて", g:3}, {w:"birth", m:"誕生", g:3}, {w:"blind", m:"目の不自由な", g:3}, {w:"blood", m:"血", g:3}, {w:"board", m:"委員会・板", g:3}, {w:"borrow", m:"借りる", g:3}, {w:"boss", m:"上司", g:3}, {w:"bottom", m:"底", g:3}, {w:"boundary", m:"境界", g:3}, {w:"brain", m:"脳", g:3}, {w:"break", m:"休憩・壊す", g:3}, {w:"breath", m:"息", g:3}, {w:"bridge", m:"橋", g:3}, {w:"brief", m:"簡潔な", g:3}, {w:"bright", m:"輝かしい", g:3}, {w:"broad", m:"広い", g:3}, {w:"broadcast", m:"放送する", g:3}, {w:"budget", m:"予算", g:3}, {w:"building", m:"建物", g:3}, {w:"burn", m:"燃える", g:3}, {w:"business", m:"ビジネス", g:3}, {w:"calm", m:"冷静な", g:3}, {w:"campaign", m:"キャンペーン", g:3}, {w:"cancer", m:"がん", g:3}, {w:"candidate", m:"候補者", g:3}, {w:"capital", m:"資本・首都", g:3}, {w:"career", m:"経歴", g:3}, {w:"careful", m:"注意深い", g:3}, {w:"case", m:"場合", g:3}, {w:"cash", m:"現金", g:3}, {w:"castle", m:"城", g:3}, {w:"category", m:"範疇", g:3}, {w:"cause", m:"引き起こす", g:3}, {w:"celebrate", m:"祝う", g:3}, {w:"cell", m:"細胞", g:3}, {w:"century", m:"世紀", g:3}, {w:"certain", m:"特定の・確信して", g:3}, {w:"challenge", m:"挑戦", g:3}, {w:"champion", m:"王者", g:3}, {w:"chance", m:"機会", g:3}, {w:"change", m:"変化", g:3}, {w:"character", m:"文字・性格", g:3}, {w:"charge", m:"料金・充電", g:3}, {w:"charity", m:"慈善", g:3}, {w:"check", m:"確認する", g:3}, {w:"chemical", m:"化学の", g:3}, {w:"choice", m:"選択", g:3}, {w:"choose", m:"選ぶ", g:3}, {w:"church", m:"教会", g:3}, {w:"citizen", m:"市民", g:3}, {w:"civil", m:"市民の", g:3}, {w:"claim", m:"主張する", g:3}, {w:"class", m:"階級・授業", g:3}, {w:"clear", m:"明白な", g:3}, {w:"climate", m:"気候", g:3}, {w:"climb", m:"登る", g:3}, {w:"closely", m:"密接に", g:3}, {w:"coach", m:"コーチ", g:3}, {w:"coal", m:"石炭", g:3}, {w:"coast", m:"海岸", g:3}, {w:"code", m:"規定・符号", g:3}, {w:"collect", m:"集める", g:3}, {w:"collection", m:"収集", g:3}, {w:"college", m:"大学", g:3}, {w:"combination", m:"組み合わせ", g:3}, {w:"combine", m:"結合させる", g:3}, {w:"comfort", m:"快適さ", g:3}, {w:"comfortable", m:"快適な", g:3}, {w:"command", m:"命令", g:3}, {w:"comment", m:"意見", g:3}, {w:"commercial", m:"商業の", g:3}, {w:"common", m:"共通の", g:3}, {w:"communicate", m:"伝える", g:3}, {w:"communication", m:"通信", g:3}, {w:"community", m:"地域社会", g:3}, {w:"company", m:"会社", g:3}, {w:"compare", m:"比較する", g:3}, {w:"comparison", m:"比較", g:3}, {w:"compete", m:"競争する", g:3}, {w:"competition", m:"競争", g:3}, {w:"complain", m:"不平を言う", g:3}, {w:"complete", m:"完全な", g:3}, {w:"completely", m:"完全に", g:3}, {w:"complex", m:"複雑な", g:3}, {w:"computer", m:"コンピュータ", g:3}, {w:"concentrate", m:"集中する", g:3}, {w:"concept", m:"概念", g:3}, {w:"concern", m:"懸念", g:3}, {w:"concert", m:"演奏会", g:3}, {w:"conclude", m:"結論づける", g:3}, {w:"conclusion", m:"結論", g:3}, {w:"condition", m:"条件・状態", g:3}, {w:"conference", m:"会議", g:3}, {w:"confidence", m:"自信", g:3}, {w:"confirm", m:"確認する", g:3}, {w:"conflict", m:"紛争", g:3}, {w:"confuse", m:"混乱させる", g:3}, {w:"connect", m:"つなぐ", g:3}, {w:"connection", m:"接続", g:3}, {w:"consider", m:"考慮する", g:3}, {w:"consideration", m:"考慮", g:3}, {w:"consist", m:"成る", g:3}, {w:"constant", m:"絶え間ない", g:3}, {w:"construction", m:"建設", g:3}, {w:"contact", m:"接触", g:3}, {w:"contain", m:"含む", g:3}, {w:"content", m:"内容", g:3}, {w:"contest", m:"競技会", g:3}, {w:"continue", m:"続ける", g:3}, {w:"continuous", m:"継続的な", g:3}, {w:"contract", m:"契約", g:3}, {w:"control", m:"制御する", g:3}, {w:"convenience", m:"便利", g:3}, {w:"convenient", m:"便利な", g:3}, {w:"conversation", m:"会話", g:3}, {w:"copy", m:"写し", g:3}, {w:"correct", m:"正しい", g:3}, {w:"cost", m:"費用", g:3}, {w:"count", m:"数える", g:3}, {w:"country", m:"国・田舎", g:3}, {w:"couple", m:"一組", g:3}, {w:"courage", m:"勇気", g:3}, {w:"course", m:"課程", g:3}, {w:"court", m:"法廷・コート", g:3}, {w:"cover", m:"覆う", g:3}, {w:"create", m:"創造する", g:3}, {w:"creative", m:"創造的な", g:3}, {w:"creature", m:"生物", g:3}, {w:"credit", m:"信用", g:3}, {w:"crime", m:"犯罪", g:3}, {w:"crisis", m:"危機", g:3}, {w:"critic", m:"批評家", g:3}, {w:"critical", m:"批判的な", g:3}, {w:"crop", m:"作物", g:3}, {w:"cross", m:"渡る", g:3}, {w:"crowd", m:"群衆", g:3}, {w:"crucial", m:"決定的な", g:3}, {w:"cruel", m:"残酷な", g:3}, {w:"culture", m:"文化", g:3}, {w:"curious", m:"好奇心の強い", g:3}, {w:"current", m:"現在の", g:3}, {w:"custom", m:"習慣", g:3}, {w:"customer", m:"顧客", g:3}, {w:"damage", m:"損害", g:3}, {w:"danger", m:"危険", g:3}, {w:"dangerous", m:"危険な", g:3}, {w:"data", m:"資料", g:3}, {w:"date", m:"日付", g:3}, {w:"dead", m:"死んだ", g:3}, {w:"deal", m:"取引", g:3}, {w:"death", m:"死", g:3}, {w:"debate", m:"討論", g:3}, {w:"decade", m:"10年間", g:3}, {w:"decide", m:"決心する", g:3}, {w:"decision", m:"決定", g:3}, {w:"declare", m:"宣言する", g:3}, {w:"decline", m:"衰退する", g:3}, {w:"decorate", m:"飾る", g:3}, {w:"decrease", m:"減少する", g:3}, {w:"deeply", m:"深く", g:3}, {w:"defeat", m:"打ち負かす", g:3}, {w:"defend", m:"守る", g:3}, {w:"defense", m:"防衛", g:3}, {w:"define", m:"定義する", g:3}, {w:"definite", m:"明確な", g:3}, {w:"definition", m:"定義", g:3}, {w:"degree", m:"度", g:3}, {w:"delay", m:"遅らせる", g:3}, {w:"deliver", m:"届ける", g:3}, {w:"delivery", m:"配達", g:3}, {w:"demand", m:"需要", g:3}, {w:"democracy", m:"民主主義", g:3}, {w:"demonstrate", m:"証明する", g:3}, {w:"deny", m:"否定する", g:3}, {w:"department", m:"部門", g:3}, {w:"departure", m:"出発", g:3}, {w:"depend", m:"頼る", g:3}, {w:"dependent", m:"依存した", g:3}, {w:"deposit", m:"預金", g:3}, {w:"depth", m:"深さ", g:3}, {w:"describe", m:"説明する", g:3}, {w:"description", m:"記述", g:3}, {w:"desert", m:"砂漠", g:3}, {w:"deserve", m:"値する", g:3}, {w:"design", m:"設計", g:3}, {w:"desire", m:"願望", g:3}, {w:"desk", m:"机", g:3}, {w:"despite", m:"〜にもかかわらず", g:3}, {w:"destroy", m:"破壊する", g:3}, {w:"destruction", m:"破壊", g:3}, {w:"detail", m:"詳細", g:3}, {w:"detailed", m:"詳細な", g:3}, {w:"detect", m:"探知する", g:3}, {w:"determine", m:"決定する", g:3}, {w:"develop", m:"開発する", g:3}, {w:"development", m:"発達", g:3}, {w:"device", m:"装置", g:3}, {w:"dialogue", m:"対話", g:3}, {w:"diamond", m:"金剛石", g:3}, {w:"diary", m:"日記", g:3}, {w:"dictionary", m:"辞書", g:3}, {w:"die", m:"死ぬ", g:3}, {w:"diet", m:"食事", g:3}, {w:"difference", m:"違い", g:3}, {w:"different", m:"異なる", g:3}, {w:"difficult", m:"難しい", g:3}, {w:"difficulty", m:"困難", g:3}, {w:"digital", m:"デジタルの", g:3}, {w:"direct", m:"直接の", g:3}, {w:"direction", m:"方向", g:3}, {w:"directly", m:"直接に", g:3}, {w:"director", m:"監督", g:3}, {w:"disappear", m:"消える", g:3}, {w:"disappoint", m:"失望させる", g:3}, {w:"disaster", m:"災害", g:3}, {w:"discover", m:"発見する", g:3}, {w:"discovery", m:"発見", g:3}, {w:"discuss", m:"話し合う", g:3}, {w:"discussion", m:"話し合い", g:3}, {w:"disease", m:"病気", g:3}, {w:"dish", m:"皿", g:3}, {w:"display", m:"展示", g:3}, {w:"distance", m:"距離", g:3}, {w:"distant", m:"遠い", g:3}, {w:"distinct", m:"はっきりした", g:3}, {w:"distinguish", m:"区別する", g:3}, {w:"distribute", m:"配布する", g:3}, {w:"district", m:"地区", g:3}, {w:"disturb", m:"邪魔する", g:3}, {w:"divide", m:"分ける", g:3}, {w:"division", m:"分割", g:3}, {w:"document", m:"文書", g:3}, {w:"domestic", m:"国内の", g:3}, {w:"dominant", m:"支配的な", g:3}, {w:"donate", m:"寄付する", g:3}, {w:"donation", m:"寄付", g:3}, {w:"double", m:"二倍の", g:3}, {w:"doubt", m:"疑い", g:3}, {w:"download", m:"ダウンロードする", g:3}, {w:"downstairs", m:"階下へ", g:3}, {w:"drama", m:"劇", g:3}, {w:"dramatic", m:"劇的な", g:3}, {w:"dream", m:"夢", g:3}, {w:"dress", m:"衣服", g:3}, {w:"drill", m:"訓練", g:3}, {w:"drink", m:"飲む", g:3}, {w:"drive", m:"運転する", g:3}, {w:"driver", m:"運転手", g:3}, {w:"drop", m:"落とす", g:3}, {w:"drug", m:"薬物", g:3}, {w:"due", m:"予定された", g:3}, {w:"during", m:"〜の間", g:3}, {w:"dust", m:"ほこり", g:3}, {w:"duty", m:"義務", g:3}, {w:"each", m:"各々の", g:3}, {w:"eager", m:"熱望して", g:3}, {w:"earn", m:"稼ぐ", g:3}, {w:"earth", m:"地球", g:3}, {w:"earthquake", m:"地震", g:3}, {w:"ease", m:"容易さ", g:3}, {w:"easily", m:"容易に", g:3}, {w:"east", m:"東", g:3}, {w:"eastern", m:"東の", g:3}, {w:"economic", m:"経済の", g:3}, {w:"economy", m:"経済", g:3}, {w:"edge", m:"縁", g:3}, {w:"edit", m:"編集する", g:3}, {w:"edition", m:"版", g:3}, {w:"editor", m:"編集者", g:3}, {w:"educate", m:"教育する", g:3}, {w:"education", m:"教育", g:3}, {w:"educational", m:"教育の", g:3}, {w:"effect", m:"効果", g:3}, {w:"effective", m:"効果的な", g:3}, {w:"efficiency", m:"効率", g:3}, {w:"efficient", m:"効率的な", g:3}, {w:"effort", m:"努力", g:3}, {w:"eight", m:"8", g:3}, {w:"either", m:"どちらか", g:3}, {w:"elder", m:"年上の", g:3}, {w:"elect", m:"選出する", g:3}, {w:"election", m:"選挙", g:3}, {w:"electric", m:"電気の", g:3}, {w:"electrical", m:"電気に関する", g:3}, {w:"electricity", m:"電気", g:3}, {w:"electronic", m:"電子の", g:3}, {w:"element", m:"要素", g:3}, {w:"elementary", m:"初歩の", g:3}, {w:"elevator", m:"昇降機", g:3}, {w:"eliminate", m:"排除する", g:3}, {w:"else", m:"他に", g:3}, {w:"elsewhere", m:"他のどこかで", g:3}, {w:"embarrass", m:"恥ずかしがらせる", g:3}, {w:"emergency", m:"緊急事態", g:3}, {w:"emotion", m:"感情", g:3}, {w:"emotional", m:"感情的な", g:3}, {w:"emphasis", m:"強調", g:3}, {w:"emphasize", m:"強調する", g:3}, {w:"employ", m:"雇う", g:3}, {w:"employee", m:"従業員", g:3}, {w:"employer", m:"雇い主", g:3}, {w:"employment", m:"雇用", g:3}, {w:"empty", m:"空の", g:3}, {w:"enable", m:"可能にする", g:3}, {w:"encounter", m:"遭遇する", g:3}, {w:"encourage", m:"勇気づける", g:3}, {w:"end", m:"終わり", g:3}, {w:"endless", m:"終わりのない", g:3}, {w:"energy", m:"エネルギー", g:3}, {w:"engage", m:"従事させる", g:3}, {w:"engine", m:"エンジン", g:3}, {w:"engineer", m:"技師", g:3}, {w:"engineering", m:"工学", g:3}, {w:"enhance", m:"高める", g:3}, {w:"enjoy", m:"楽しむ", g:3}, {w:"enjoyment", m:"楽しみ", g:3}, {w:"enormous", m:"巨大な", g:3}, {w:"enough", m:"十分な", g:3}, {w:"ensure", m:"確実にする", g:3}, {w:"enter", m:"入る", g:3}, {w:"enterprise", m:"企業", g:3}, {w:"entertainment", m:"娯楽", g:3}, {w:"enthusiasm", m:"熱意", g:3}, {w:"entire", m:"全体の", g:3}, {w:"entirely", m:"完全に", g:3}, {w:"entrance", m:"入り口", g:3}, {w:"environment", m:"環境", g:3}, {w:"environmental", m:"環境の", g:3}, {w:"equal", m:"等しい", g:3}, {w:"equally", m:"等しく", g:3}, {w:"equipment", m:"装備", g:3}, {w:"era", m:"時代", g:3}, {w:"error", m:"誤り", g:3}, {w:"escape", m:"逃げる", g:3}, {w:"especially", m:"特に", g:3}, {w:"essay", m:"作文", g:3}, {w:"essential", m:"不可欠な", g:3}, {w:"establish", m:"設立する", g:3}, {w:"establishment", m:"設立", g:3}, {w:"estate", m:"地所", g:3}, {w:"estimate", m:"見積もる", g:3}, {w:"etc", m:"など", g:3}, {w:"ethical", m:"倫理的な", g:3}, {w:"ethnic", m:"民族の", g:3}, {w:"evaluate", m:"評価する", g:3}, {w:"even", m:"〜でさえ", g:3}, {w:"evening", m:"夕方", g:3}, {w:"event", m:"行事", g:3}, {w:"eventually", m:"結局は", g:3}, {w:"ever", m:"かつて", g:3}, {w:"every", m:"毎〜", g:3}, {w:"everybody", m:"みんな", g:3}, {w:"everyday", m:"日常の", g:3}, {w:"everyone", m:"誰もが", g:3}, {w:"everything", m:"すべてのこと", g:3}, {w:"everywhere", m:"どこでも", g:3}, {w:"evidence", m:"証拠", g:3}, {w:"evolution", m:"進化", g:3}, {w:"evolve", m:"進化する", g:3}, {w:"exact", m:"正確な", g:3}, {w:"exactly", m:"正確に", g:3}, {w:"exaggerate", m:"誇張する", g:3}, {w:"exam", m:"試験", g:3}, {w:"examination", m:"試験", g:3}, {w:"examine", m:"調査する", g:3}, {w:"example", m:"例", g:3}, {w:"excellent", m:"優れた", g:3}, {w:"except", m:"〜を除いて", g:3}, {w:"exception", m:"例外", g:3}, {w:"excessive", m:"過度の", g:3}, {w:"exchange", m:"交換する", g:3}, {w:"excite", m:"興奮させる", g:3}, {w:"excitement", m:"興奮", g:3}, {w:"exciting", m:"わくわくさせる", g:3}, {w:"exclude", m:"除外する", g:3}, {w:"excuse", m:"言い訳", g:3}, {w:"executive", m:"役員", g:3}, {w:"exercise", m:"運動", g:3}, {w:"exhibit", m:"展示する", g:3}, {w:"exhibition", m:"展示会", g:3}, {w:"exist", m:"存在する", g:3}, {w:"existence", m:"存在", g:3}, {w:"exit", m:"出口", g:3}, {w:"expand", m:"拡大する", g:3}, {w:"expansion", m:"拡大", g:3}, {w:"expect", m:"期待する", g:3}, {w:"expectation", m:"期待", g:3}, {w:"expense", m:"費用", g:3}, {w:"expensive", m:"高価な", g:3}, {w:"experience", m:"経験", g:3}, {w:"experiment", m:"実験", g:3}, {w:"expert", m:"専門家", g:3}, {w:"explain", m:"説明する", g:3}, {w:"explanation", m:"説明", g:3}, {w:"explode", m:"爆発する", g:3}, {w:"explore", m:"探検する", g:3}, {w:"explorer", m:"探検家", g:3}, {w:"explosion", m:"爆発", g:3}, {w:"export", m:"輸出する", g:3}, {w:"expose", m:"さらす", g:3}, {w:"express", m:"表現する", g:3}, {w:"expression", m:"表現", g:3}, {w:"extend", m:"伸ばす", g:3}, {w:"extension", m:"延長", g:3}, {w:"extensive", m:"広範囲な", g:3}, {w:"extent", m:"程度", g:3}, {w:"external", m:"外部の", g:3}, {w:"extra", m:"余分な", g:3}, {w:"extraordinary", m:"並外れた", g:3}, {w:"extreme", m:"極端な", g:3}, {w:"extremely", m:"極めて", g:3}, {w:"eye", m:"目", g:3}, {w:"face", m:"直面する・顔", g:3}, {w:"facility", m:"施設", g:3}, {w:"fact", m:"事実", g:3}, {w:"factor", m:"要因", g:3}, {w:"factory", m:"工場", g:3}, {w:"faculty", m:"学部", g:3}, {w:"fail", m:"失敗する", g:3}, {w:"failure", m:"失敗", g:3}, {w:"faint", m:"かすかな", g:3}, {w:"fair", m:"公平な", g:3}, {w:"fairly", m:"かなり", g:3}, {w:"faith", m:"信仰", g:3}, {w:"fall", m:"落ちる", g:3}, {w:"false", m:"偽の", g:3}, {w:"fame", m:"名声", g:3}, {w:"familiar", m:"馴染みのある", g:3}, {w:"family", m:"家族", g:3}, {w:"famous", m:"有名な", g:3}, {w:"fan", m:"ファン", g:3}, {w:"fancy", m:"空想", g:3}, {w:"fantastic", m:"素晴らしい", g:3}, {w:"far", m:"遠い", g:3}, {w:"fare", m:"運賃", g:3}, {w:"farm", m:"農場", g:3}, {w:"farmer", m:"農夫", g:3}, {w:"fashion", m:"ファッション", g:3}, {w:"fast", m:"速い", g:3}, {w:"fasten", m:"締める", g:3}, {w:"fat", m:"太った", g:3}, {w:"fatal", m:"致命的な", g:3}, {w:"fate", m:"運命", g:3}, {w:"father", m:"父", g:3}, {w:"fault", m:"責任・欠点", g:3}, {w:"favor", m:"好意", g:3}, {w:"favorite", m:"お気に入りの", g:3}, {w:"fear", m:"恐怖", g:3}, {w:"feather", m:"羽", g:3}, {w:"feature", m:"特徴", g:3}, {w:"federal", m:"連邦の", g:3}, {w:"fee", m:"料金", g:3}, {w:"feed", m:"餌をやる", g:3}, {w:"feel", m:"感じる", g:3}, {w:"feeling", m:"感情", g:3}, {w:"fellow", m:"仲間", g:3}, {w:"female", m:"女性の", g:3}, {w:"fence", m:"柵", g:3}, {w:"festival", m:"祭り", g:3}, {w:"fever", m:"熱", g:3}, {w:"few", m:"ほとんどない", g:3}, {w:"fiction", m:"小説", g:3}, {w:"field", m:"野原・分野", g:3}, {w:"fierce", m:"激しい", g:3}, {w:"fifth", m:"第5の", g:3}, {w:"fifty", m:"50", g:3}, {w:"fight", m:"戦う", g:3}, {w:"figure", m:"数字・姿", g:3}, {w:"file", m:"ファイル", g:3}, {w:"fill", m:"満たす", g:3}, {w:"film", m:"映画", g:3}, {w:"final", m:"最終の", g:3}, {w:"finally", m:"ついに", g:3}, {w:"finance", m:"財政", g:3}, {w:"financial", m:"金融の", g:3}, {w:"find", m:"見つける", g:3}, {w:"fine", m:"元気な・立派な", g:3}, {w:"finger", m:"指", g:3}, {w:"finish", m:"終える", g:3}, {w:"fire", m:"火・解雇する", g:3}, {w:"firm", m:"会社・堅い", g:3}, {w:"first", m:"最初の", g:3}, {w:"fish", m:"魚", g:3}, {w:"fishing", m:"釣り", g:3}, {w:"fit", m:"合う", g:3}, {w:"fix", m:"固定する・修理する", g:3}, {w:"flag", m:"旗", g:3}, {w:"flame", m:"炎", g:3}, {w:"flash", m:"閃光", g:3}, {w:"flat", m:"平らな", g:3}, {w:"flavor", m:"風味", g:3}, {w:"flee", m:"逃げる", g:3}, {w:"flesh", m:"肉", g:3}, {w:"flexible", m:"柔軟な", g:3}, {w:"flight", m:"飛行", g:3}, {w:"float", m:"浮かぶ", g:3}, {w:"flock", m:"群れ", g:3}, {w:"flood", m:"洪水", g:3}, {w:"floor", m:"床", g:3}, {w:"flow", m:"流れる", g:3}, {w:"flower", m:"花", g:3}, {w:"fluent", m:"流暢な", g:3}, {w:"fly", m:"飛ぶ", g:3}, {w:"focus", m:"焦点", g:3}, {w:"fold", m:"畳む", g:3}, {w:"folk", m:"民衆", g:3}, {w:"follow", m:"従う", g:3}, {w:"following", m:"次の", g:3}, {w:"fond", m:"好んで", g:3}, {w:"food", m:"食物", g:3}, {w:"fool", m:"愚か者", g:3}, {w:"foot", m:"足", g:3}, {w:"football", m:"フットボール", g:3}, {w:"forbid", m:"禁止する", g:3}, {w:"force", m:"力・強いる", g:3}, {w:"forecast", m:"予報", g:3}, {w:"foreign", m:"外国の", g:3}, {w:"foreigner", m:"外国人", g:3}, {w:"forest", m:"森", g:3}, {w:"forever", m:"永遠に", g:3}, {w:"forget", m:"忘れる", g:3}, {w:"forgive", m:"許す", g:3}, {w:"form", m:"形・形態", g:3}, {w:"formal", m:"正式な", g:3}, {w:"formation", m:"形成", g:3}, {w:"former", m:"前の", g:3}, {w:"formula", m:"公式", g:3}, {w:"forth", m:"前へ", g:3}, {w:"fortune", m:"運勢・財産", g:3}, {w:"forward", m:"前方へ", g:3}, {w:"found", m:"設立する", g:3}, {w:"foundation", m:"基礎・財団", g:3}, {w:"fountain", m:"噴水", g:3}, {w:"four", m:"4", g:3}, {w:"fourth", m:"第4の", g:3}, {w:"frame", m:"枠", g:3}, {w:"free", m:"自由な・無料の", g:3}, {w:"freedom", m:"自由", g:3}, {w:"freeze", m:"凍る", g:3}, {w:"frequency", m:"頻度", g:3}, {w:"frequent", m:"頻繁な", g:3}, {w:"fresh", m:"新鮮な", g:3}, {w:"friend", m:"友達", g:3}, {w:"friendly", m:"親しみやすい", g:3}, {w:"friendship", m:"友情", g:3}, {w:"fright", m:"恐怖", g:3}, {w:"frog", m:"カエル", g:3}, {w:"front", m:"正面", g:3}, {w:"fruit", m:"果物", g:3}, {w:"fuel", m:"燃料", g:3}, {w:"fulfill", m:"果たす", g:3}, {w:"full", m:"満ちた", g:3}, {w:"fully", m:"完全に", g:3}, {w:"fun", m:"楽しみ", g:3}, {w:"function", m:"機能", g:3}, {w:"fund", m:"資金", g:3}, {w:"fundamental", m:"基本的な", g:3}, {w:"funeral", m:"葬式", g:3}, {w:"funny", m:"おかしい", g:3}, {w:"furniture", m:"家具", g:3}, {w:"further", m:"さらなる", g:3}, {w:"future", m:"未来", g:3}, {w:"gain", m:"得る", g:3}, {w:"gallery", m:"画廊", g:3}, {w:"gap", m:"隙間", g:3}, {w:"garden", m:"庭", g:3}, {w:"gas", m:"ガス", g:3}, {w:"gate", m:"門", g:3}, {w:"gather", m:"集まる", g:3}, {w:"gear", m:"用具", g:3}, {w:"general", m:"一般的な", g:3}, {w:"generally", m:"一般的に", g:3}, {w:"generate", m:"生み出す", g:3}, {w:"generation", m:"世代", g:3}, {w:"generous", m:"寛大な", g:3}, {w:"genius", m:"天才", g:3}, {w:"gentle", m:"優しい", g:3}, {w:"gentleman", m:"紳士", g:3}, {w:"genuine", m:"本物の", g:3}, {w:"geography", m:"地理", g:3}, {w:"gesture", m:"身振り", g:3}, {w:"get", m:"得る", g:3}, {w:"ghost", m:"幽霊", g:3}, {w:"giant", m:"巨大な", g:3}, {w:"gift", m:"贈り物", g:3}, {w:"girl", m:"女の子", g:3}, {w:"give", m:"与える", g:3}, {w:"glad", m:"うれしい", g:3}, {w:"glance", m:"ちらりと見る", g:3}, {w:"glass", m:"コップ", g:3}, {w:"global", m:"地球規模の", g:3}, {w:"glory", m:"栄光", g:3}, {w:"glove", m:"手袋", g:3}, {w:"glow", m:"輝き", g:3}, {w:"glue", m:"のり", g:3}, {w:"go", m:"行く", g:3}, {w:"goal", m:"目標", g:3}, {w:"god", m:"神", g:3}, {w:"gold", m:"金", g:3}, {w:"golden", m:"金色の", g:3}, {w:"golf", m:"ゴルフ", g:3}, {w:"good", m:"良い", g:3}, {w:"goodbye", m:"さようなら", g:3}, {w:"goods", m:"商品", g:3}, {w:"govern", m:"統治する", g:3}, {w:"government", m:"政府", g:3}, {w:"governor", m:"知事", g:3}, {w:"grab", m:"つかむ", g:3}, {w:"grace", m:"優雅", g:3}, {w:"grade", m:"学年・成績", g:3}, {w:"gradual", m:"徐々の", g:3}, {w:"gradually", m:"徐々に", g:3}, {w:"graduate", m:"卒業する", g:3}, {w:"grain", m:"穀物", g:3}, {w:"grammar", m:"文法", g:3}, {w:"grand", m:"壮大な", g:3}, {w:"grandchild", m:"孫", g:3}, {w:"grandfather", m:"祖父", g:3}, {w:"grandmother", m:"祖母", g:3}, {w:"grant", m:"認める", g:3}, {w:"grape", m:"ブドウ", g:3}, {w:"grass", m:"草", g:3}, {w:"grateful", m:"感謝している", g:3}, {w:"grave", m:"墓", g:3}, {w:"gravity", m:"重力", g:3}, {w:"gray", m:"灰色の", g:3}, {w:"great", m:"偉大な", g:3}, {w:"greatly", m:"大いに", g:3}, {w:"green", m:"緑の", g:3}, {w:"greet", m:"挨拶する", g:3}, {w:"greeting", m:"挨拶", g:3}, {w:"grief", m:"深い悲しみ", g:3}, {w:"grin", m:"にやりと笑う", g:3}, {w:"grip", m:"しっかり握る", g:3}, {w:"grocery", m:"食料品店", g:3}, {w:"ground", m:"地面", g:3}, {w:"group", m:"集団", g:3}, {w:"grow", m:"成長する", g:3}, {w:"growth", m:"成長", g:3}, {w:"guarantee", m:"保証する", g:3}, {w:"guard", m:"警備員", g:3}, {w:"guess", m:"推測する", g:3}, {w:"guest", m:"客", g:3}, {w:"guide", m:"案内する", g:3}, {w:"guideline", m:"指針", g:3}, {w:"guilt", m:"罪", g:3}, {w:"guilty", m:"有罪の", g:3}, {w:"guitar", m:"ギター", g:3}, {w:"gun", m:"銃", g:3}, {w:"guy", m:"男", g:3}, {w:"gym", m:"体育館", g:3}, {w:"habit", m:"習慣", g:3}, {w:"hair", m:"髪", g:3}, {w:"half", m:"半分", g:3}, {w:"hall", m:"廊下", g:3}, {w:"hand", m:"手・渡す", g:3}, {w:"handle", m:"扱う", g:3}, {w:"handsome", m:"ハンサムな", g:3}, {w:"hang", m:"掛ける", g:3}, {w:"happen", m:"起こる", g:3}, {w:"happiness", m:"幸せ", g:3}, {w:"happy", m:"幸せな", g:3}, {w:"harbor", m:"港", g:3}, {w:"hard", m:"硬い・難しい", g:3}, {w:"hardly", m:"ほとんど〜ない", g:3}, {w:"harm", m:"害", g:3}, {w:"harmful", m:"有害な", g:3}, {w:"harmony", m:"調和", g:3}, {w:"harsh", m:"厳しい", g:3}, {w:"harvest", m:"収穫", g:3}, {w:"haste", m:"急ぎ", g:3}, {w:"hat", m:"帽子", g:3}, {w:"hate", m:"嫌う", g:3}, {w:"haul", m:"引っ張る", g:3}
 ];
 
-let currentGrade = 1, gameMode = 'study', isJpToEn = false, isTyping = false, isHintOn = true;
-let quizList = [], currentWord = null, score = 0, combo = 0, highScore = parseInt(localStorage.getItem('vocab_highscore')) || 0;
-let gameState = 'menu', timerInterval = null, weakWords = JSON.parse(localStorage.getItem('vocab_weak') || '[]');
-
-window.onload = () => {
-    updateHighScoreUI();
-    if (window.speechSynthesis) {
-        window.speechSynthesis.getVoices();
-        window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
-    }
-    document.getElementById('answer-input').addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') {
-            if (document.getElementById('next-button').style.display === 'block') makeQuestion();
-            else checkAnswer(e.target.value);
-        }
-    });
-};
-
-function updateHighScoreUI() { document.getElementById('high-score-display').innerText = `最高記録: ${highScore} コンボ`; }
+let currentWord, quizList, score, combo, gameMode, isJpToEn, isTyping, isHintOn, gameState, currentGrade=1, weakWords=[];
 
 function showMenu() {
-    gameState = 'menu'; clearInterval(timerInterval);
-    document.getElementById('menu-area').style.display = 'block';
     document.getElementById('setup-area').style.display = 'none';
     document.getElementById('game-area').style.display = 'none';
     document.getElementById('result-screen').style.display = 'none';
     document.getElementById('back-btn').style.display = 'none';
     document.getElementById('timer-wrapper').style.display = 'none';
-    updateHighScoreUI();
+    document.getElementById('menu-area').style.display = 'block';
+    gameState = 'menu';
 }
 
 function initGame(mode) {
@@ -150,16 +131,28 @@ function initGame(mode) {
     document.getElementById('input-method-container').style.display = (mode === 'speak') ? 'none' : 'flex';
 }
 
-function toggleInputMenu() { isJpToEn = document.getElementById('dir-toggle').checked; }
-function updateGradeUI(btn) { document.querySelectorAll('.grade-btn').forEach(b => b.classList.remove('active')); btn.classList.add('active'); }
+function toggleInputMenu() {
+    isJpToEn = document.getElementById('dir-toggle').checked;
+}
+
+function updateGradeUI(btn) {
+    document.querySelectorAll('.grade-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+}
 
 function startGame() {
     isJpToEn = document.getElementById('dir-toggle').checked;
     isTyping = document.getElementById('input-toggle').checked;
     isHintOn = document.getElementById('hint-toggle').checked;
+    
     let baseList = (gameMode === 'weak') ? weakWords : rawData;
     quizList = (currentGrade !== 0 && gameMode !== 'weak') ? baseList.filter(v => v.g === currentGrade) : [...baseList];
-    if (quizList.length === 0) { alert("単語がありません！"); return; }
+    
+    if (quizList.length === 0) {
+        alert("単語がありません！");
+        return;
+    }
+    
     score = 0; combo = 0; gameState = 'playing';
     document.getElementById('setup-area').style.display = 'none';
     document.getElementById('game-area').style.display = 'block';
@@ -174,10 +167,10 @@ function makeQuestion() {
     document.getElementById('result').innerText = "";
     document.getElementById('next-button').style.display = 'none';
     document.getElementById('answer-input').value = "";
-    
+
     if (isHintOn) {
-        if (isJpToEn) speak(currentWord.m, 'ja-JP');
-        else speak(currentWord.w, 'en-US');
+        if (isJpToEn) speak(currentWord.m, 'ja');
+        else speak(currentWord.w, 'en');
     }
 
     if (gameMode === 'speak') {
@@ -193,87 +186,74 @@ function makeQuestion() {
         document.getElementById('typing-area').style.display = 'none';
         document.getElementById('mic-trigger-area').style.display = 'none';
         document.getElementById('choices-area').style.display = 'block';
-        generateChoices();
+        createChoices();
     }
 }
 
-function checkAnswer(userAns, recognizedText = null) {
-    if (gameState !== 'playing') return;
-    const isCorrect = isJpToEn ? userAns.toLowerCase().trim() === currentWord.w.toLowerCase() : userAns === currentWord.m;
-    const resultEl = document.getElementById('result');
-    let displayPrefix = recognizedText ? `🎙️「${recognizedText}」\n` : "";
-
-    if (isCorrect) {
-        resultEl.innerText = displayPrefix + "⭕ 正解！";
-        resultEl.style.color = "var(--success)";
-        score++;
-        if (gameMode === 'challenge') {
-            combo++;
-            if (combo > highScore) { highScore = combo; localStorage.setItem('vocab_highscore', highScore); updateHighScoreUI(); }
-        }
-        playFeedback(true);
-        speak(currentWord.w, 'en-US', () => {
-            setTimeout(makeQuestion, 300); 
-        });
+function checkAnswer(ans) {
+    const correct = isJpToEn ? currentWord.w : currentWord.m;
+    if (ans.toLowerCase().trim() === correct.toLowerCase().trim()) {
+        score++; combo++;
+        document.getElementById('result').innerText = "⭕ 正解！";
+        document.getElementById('result').style.color = "var(--success)";
+        playTone(880, 'sine', 0, 0.1, 0.1);
+        setTimeout(makeQuestion, 800);
     } else {
-        resultEl.innerText = displayPrefix + `❌ 正解は: ${isJpToEn ? currentWord.w : currentWord.m}`;
-        resultEl.style.color = "var(--error)";
-        document.getElementById('game-area').classList.add('shake-effect');
-        setTimeout(() => document.getElementById('game-area').classList.remove('shake-effect'), 300);
-        if (!weakWords.some(v => v.w === currentWord.w)) { weakWords.push(currentWord); localStorage.setItem('vocab_weak', JSON.stringify(weakWords)); }
-        playFeedback(false);
-        if (gameMode === 'challenge') combo = 0;
-        speak(currentWord.w, 'en-US');
+        combo = 0;
+        document.getElementById('result').innerText = `❌ 残念！ 正解は: ${correct}`;
+        document.getElementById('result').style.color = "var(--error)";
+        document.getElementById('main-container').classList.add('shake-effect');
+        setTimeout(() => document.getElementById('main-container').classList.remove('shake-effect'), 300);
+        if (!weakWords.includes(currentWord)) weakWords.push(currentWord);
         document.getElementById('next-button').style.display = 'block';
     }
 }
 
-function speak(text, lang = 'en-US', callback = null) {
-    if (!window.speechSynthesis) return;
-    window.speechSynthesis.cancel();
+function speak(text, lang) {
     const uttr = new SpeechSynthesisUtterance(text);
-    uttr.lang = lang;
-    uttr.rate = 1.0; 
-    
-    // 日本語のとき、より自然な高品質ボイスを探す
-    if (lang === 'ja-JP') {
-        const voices = window.speechSynthesis.getVoices();
-        // Googleの日本語ボイスや、高品質なOSボイスを優先選択
-        const preferredVoice = voices.find(v => v.lang.includes('ja') && (v.name.includes('Google') || v.name.includes('Kyoko') || v.name.includes('Nanami')));
-        if (preferredVoice) uttr.voice = preferredVoice;
-        uttr.pitch = 1.0;
-        uttr.rate = 1.1; // 日本語は少し速い方が自然に聞こえる
-    }
-
-    if (callback) uttr.onend = callback;
+    uttr.lang = lang === 'ja' ? 'ja-JP' : 'en-US';
     window.speechSynthesis.speak(uttr);
 }
 
+// --- 修正箇所: 音声認識の速度向上設定 ---
 function startListening() {
     const Speech = window.SpeechRecognition || window.webkitSpeechRecognition;
     if (!Speech) return;
-    const rec = new Speech(); rec.lang = 'en-US';
+    const rec = new Speech();
+    rec.lang = 'en-US';
+    
+    // 発話が終わったと判断されたら即座に結果を出すための設定
+    rec.continuous = false;     
+    rec.interimResults = false; 
+
     const btn = document.getElementById('mic-btn');
     btn.style.opacity = "0.5";
-    rec.onresult = (e) => checkAnswer(e.results[0][0].transcript, e.results[0][0].transcript);
-    rec.onend = () => { btn.style.opacity = "1.0"; };
+    btn.innerText = "聴取中...";
+
+    rec.onresult = (e) => {
+        const transcript = e.results[0][0].transcript.toLowerCase().trim();
+        document.getElementById('result').innerText = "あなたの発音: " + transcript;
+        checkAnswer(transcript);
+    };
+
+    rec.onerror = () => {
+        btn.style.opacity = "1";
+        btn.innerText = "🎤 タップして発音";
+    };
+
+    rec.onend = () => {
+        btn.style.opacity = "1";
+        btn.innerText = "🎤 タップして発音";
+    };
+
     rec.start();
 }
+// ------------------------------------
 
-function startChallengeTimer() {
-    const bar = document.getElementById('timer-bar');
-    document.getElementById('timer-wrapper').style.display = 'block';
-    let timeLeft = 60;
-    timerInterval = setInterval(() => {
-        timeLeft -= 0.1; bar.style.width = (timeLeft / 60 * 100) + '%';
-        if (timeLeft <= 0) { clearInterval(timerInterval); endGame(); }
-    }, 100);
-}
-
-function generateChoices() {
-    const area = document.getElementById('choices-area'); area.innerHTML = "";
-    let correctAns = isJpToEn ? currentWord.w : currentWord.m;
-    let choices = [correctAns];
+function createChoices() {
+    const area = document.getElementById('choices-area');
+    area.innerHTML = "";
+    let choices = [isJpToEn ? currentWord.w : currentWord.m];
     while (choices.length < 4) {
         let dummy = rawData[Math.floor(Math.random() * rawData.length)];
         let val = isJpToEn ? dummy.w : dummy.m;
@@ -283,6 +263,21 @@ function generateChoices() {
         const btn = document.createElement('button'); btn.className = 'choice-btn'; btn.innerText = c;
         btn.onclick = () => checkAnswer(c); area.appendChild(btn);
     });
+}
+
+function startChallengeTimer() {
+    const bar = document.getElementById('timer-bar');
+    const wrapper = document.getElementById('timer-wrapper');
+    wrapper.style.display = 'block';
+    let timeLeft = 600;
+    const interval = setInterval(() => {
+        timeLeft--;
+        bar.style.width = (timeLeft / 6) + '%';
+        if (timeLeft <= 0 || gameState !== 'playing') {
+            clearInterval(interval);
+            if (gameState === 'playing') endGame();
+        }
+    }, 100);
 }
 
 function endGame() {
@@ -301,11 +296,13 @@ function playTone(freq, type, start, dur, vol) {
     osc.connect(gain); gain.connect(audioCtx.destination);
     osc.start(audioCtx.currentTime + start); osc.stop(audioCtx.currentTime + start + dur);
 }
-function playFeedback(isCorrect) {
-    if (isCorrect) playTone(880, 'sine', 0, 0.1, 0.1);
-    else [0, 0.1].forEach(t => playTone(150, 'sawtooth', t, 0.2, 0.1));
-}
+
+document.getElementById('answer-input').addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        if (document.getElementById('next-button').style.display === 'block') makeQuestion();
+        else checkAnswer(e.target.value);
+    }
+});
 </script>
 </body>
-
 </html>
