@@ -224,7 +224,7 @@ function speak(text, lang = 'en-US', callback) {
         if (preferredVoice) uttr.voice = preferredVoice;
         uttr.rate = 0.9;
     } else {
-        const preferredVoice = voices.find(v => v.lang.includes('ja') && (v.name.includes('O-ren') || v.name.includes('Otoya') || v.name.includes('Google') || v.name.includes('Kyoko')));
+        const preferredVoice = voices.find(v => v.lang.includes('ja') && (v.name.includes('Otoya') || v.name.includes('Otoya') || v.name.includes('Google') || v.name.includes('Kyoko')));
         if (preferredVoice) uttr.voice = preferredVoice;
         uttr.rate = 1.1;
     }
